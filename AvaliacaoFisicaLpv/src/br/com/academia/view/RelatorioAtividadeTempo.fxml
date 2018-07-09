@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="relatorioAtividadeTempoAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="1015.0" stylesheets="@academia.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.RelatorioAtividadeTempo">
+   <children>
+      <TextArea fx:id="dadosTextArea" layoutX="351.0" layoutY="117.0" prefHeight="333.0" prefWidth="313.0" />
+      <Text layoutX="459.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relatório">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

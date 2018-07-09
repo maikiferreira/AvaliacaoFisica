@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="exibirDetalhesAtividadeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="1015.0" stylesheets="@academia.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.ExibirDetalhesAtividade">
+   <children>
+      <TextArea fx:id="textArea" layoutX="335.0" layoutY="80.0" prefHeight="263.0" prefWidth="346.0" />
+      <Text layoutX="421.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalhes da Atividade">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="34.0" layoutY="514.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+   </children>
+</AnchorPane>

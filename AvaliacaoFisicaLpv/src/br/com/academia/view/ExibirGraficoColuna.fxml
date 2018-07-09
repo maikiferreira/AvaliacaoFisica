@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.ExibirGraficoColunaController">
+   <children>
+      <Text fx:id="alunoText" layoutX="73.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aluno:" />
+      <ComboBox fx:id="alunosComboBox" layoutX="119.0" layoutY="42.0" onAction="#pesquisarAluno" prefWidth="150.0" />
+      <HBox fx:id="radiosHbox" alignment="CENTER" layoutX="10.0" layoutY="130.0" prefHeight="55.0" prefWidth="900.0">
+         <children>
+            <RadioButton fx:id="duracaoExercicioRadio" mnemonicParsing="false" onAction="#duracaoRadio" selected="true" text="Duração do Exercicio">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tipoGrafico" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="distanciaPercorridaRadio" mnemonicParsing="false" onAction="#distanciaRadio" text="Distância Percorrida" toggleGroup="$tipoGrafico">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="caloriasPerdidasRadio" mnemonicParsing="false" onAction="#caloriasRadio" text="Calorias Perdidas" toggleGroup="$tipoGrafico">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="passosRadio" mnemonicParsing="false" onAction="#passosRadio" text="Passos" toggleGroup="$tipoGrafico">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="velocidadeMediaRadio" mnemonicParsing="false" onAction="#velocidadeMediiaRadio" text="Velocidade Média" toggleGroup="$tipoGrafico">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="ritmoMedioRadio" mnemonicParsing="false" onAction="#ritmoMedioRadio" text="Ritmo Médio" toggleGroup="$tipoGrafico" />
+         </children>
+      </HBox>
+      <DatePicker fx:id="dataInicio" layoutX="156.0" layoutY="87.0" />
+      <DatePicker fx:id="dataFim" layoutX="484.0" layoutY="87.0" />
+      <ComboBox fx:id="exerciciosComboBox" layoutX="790.0" layoutY="87.0" onAction="#comboBox" prefWidth="150.0" />
+      <Text fx:id="dataInicioTextField" layoutX="69.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Inicio:" />
+      <Text fx:id="dataTerminoTextField" layoutX="359.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Termino:" />
+      <BarChart fx:id="graficoBarra" layoutX="181.0" layoutY="180.0" prefHeight="365.0" prefWidth="500.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

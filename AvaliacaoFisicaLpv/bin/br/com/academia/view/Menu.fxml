@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="fundoMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="1015.0" stylesheets="@academia.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.MenuController">
+   <children>
+      <MenuBar fx:id="munuBar" layoutX="251.0" layoutY="83.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arquivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#importarArquivos" text="Importar" />
+            </items>
+          </Menu>
+          <Menu fx:id="operacoesMenu" mnemonicParsing="false" text="Operações">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#alunoOperacoes" text="Aluno" />
+                  <MenuItem mnemonicParsing="false" onAction="#exercicioOperacoes" text="Exercicio" />
+                  <MenuItem mnemonicParsing="false" onAction="#usuarioOperacoes" text="Usuario" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Pesquisar">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#pesquisarAluno" text="Aluno" />
+                  <MenuItem mnemonicParsing="false" onAction="#pesquisarAtividade" text="Atividade" />
+                  <MenuItem mnemonicParsing="false" onAction="#pesquisarAtividadeAluno" text="Atividades de um Aluno" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exibir">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#relatorioPorAtividadeTempo" text="Relatório" />
+                  <MenuItem mnemonicParsing="false" onAction="#exibirGraficoColuna" text="Grafico Coluna" />
+                  <MenuItem mnemonicParsing="false" onAction="#exibirGraficoLinha" text="Grafico Linha" />
+                  <MenuItem mnemonicParsing="false" onAction="#graficoDetalhado" text="Grafico Detalhado" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Sair">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" layoutX="282.0" layoutY="196.0" prefHeight="566.0" prefWidth="1015.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

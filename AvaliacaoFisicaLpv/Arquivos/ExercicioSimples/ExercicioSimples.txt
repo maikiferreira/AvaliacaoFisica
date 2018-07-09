@@ -1,0 +1,17 @@
+Exercício: Basquete
+------ Usuário ------
+Nome: Bruno Silva
+Sexo: masculino
+Altura: 1,70 m
+Peso: 76,0 Kg
+Data de nascimento: 22/04/1980
+E-mail: bruno.silva@gmail.com
+Cpf: 15485514985
+Whatsapp: 978732145
+------ Detalhes do exercício ------
+Data: 20/05/2018
+Tempo: 15:00 - 15:30
+Duração: 00:30:00
+Distância: 4,54 Km
+Calorias perdidas: 580 Kcal
+Passos: 4.152

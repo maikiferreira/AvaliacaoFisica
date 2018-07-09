@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="fundoLogin" prefHeight="400.0" prefWidth="400.0" stylesheets="@academia.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.academia.controle.LoginController">
+   <children>
+      <Button fx:id="logarButton" layoutX="242.0" layoutY="237.0" mnemonicParsing="false" onAction="#logar" text="Logar" />
+      <TextField fx:id="loginTextField" layoutX="99.0" layoutY="107.0" prefHeight="25.0" prefWidth="190.0" promptText="Login" />
+      <PasswordField fx:id="senhaPasswordField" layoutX="99.0" layoutY="152.0" prefHeight="25.0" prefWidth="190.0" promptText="Senha" />
+      <Label fx:id="mensagemlabel" layoutX="105.0" layoutY="333.0" prefHeight="17.0" prefWidth="190.0" />
+      <Text fill="BLUE" layoutX="100.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACADEMIA PUXA FERRO" wrappingWidth="199.79296875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

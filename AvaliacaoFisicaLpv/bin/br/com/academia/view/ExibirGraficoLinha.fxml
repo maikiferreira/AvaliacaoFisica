@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.ExibirGraficoLinha">
+   <children>
+      <DatePicker fx:id="dataInicioDatePicker" layoutX="107.0" layoutY="116.0" />
+      <DatePicker fx:id="dateTerminoDatePicker" layoutX="334.0" layoutY="116.0" />
+      <ComboBox fx:id="atividadesComboBox" layoutX="695.0" layoutY="116.0" onAction="#obterAividade" prefWidth="150.0" />
+      <Text layoutX="625.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atividades:" />
+      <LineChart fx:id="graficoLinha" layoutX="209.0" layoutY="172.0" prefHeight="369.0" prefWidth="500.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="539.0" layoutY="116.0" mnemonicParsing="false" onAction="#pesquisar" text="Pesquisar" />
+   </children>
+</AnchorPane>

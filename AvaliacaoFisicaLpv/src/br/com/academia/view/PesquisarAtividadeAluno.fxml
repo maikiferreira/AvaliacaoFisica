@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pesquisarAtividadeAlunoAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="1015.0" stylesheets="@academia.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.academia.controle.PesquisarAtividadeAlunoController">
+   <children>
+      <ComboBox fx:id="alunosComboBox" layoutX="132.0" layoutY="63.0" onAction="#pesquisarAluno" prefWidth="150.0" />
+      <Text layoutX="67.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aluno:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="atividadesTableView" layoutX="308.0" layoutY="309.0" onMouseClicked="#obterAtividade" prefHeight="227.0" prefWidth="1015.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="atividadeTableColumn" prefWidth="75.0" text="Atividade" />
+          <TableColumn fx:id="dataTableColumn" prefWidth="75.0" text="Data" />
+            <TableColumn fx:id="horaTableColumn" prefWidth="75.0" text="Hora" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

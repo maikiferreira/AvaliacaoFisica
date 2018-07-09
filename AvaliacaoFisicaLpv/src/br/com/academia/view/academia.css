@@ -1,0 +1,64 @@
+#fundoLogin{
+	/*-fx-background-color: #00BFFF;*/
+	-fx-background-color: linear-gradiente(to right, blue, lightblue, white);
+	
+}
+
+#logarButton{
+	-fx-background-color: #87CEFA;
+	-fx-border-color: #1E90FF;
+}
+
+#loginTextField{
+	-fx-background-color: #87CEFA;
+	-fx-border-color: #1E90FF;
+}
+#senhaPasswordField{
+	-fx-background-color: #87CEFA;
+	-fx-border-color: #1E90FF;
+}
+
+#munuBar{
+	-fx-background-color: #87CEFA;
+	-fx-border-color: #1E90FF;
+}
+
+#fundoMenu{
+	-fx-background-color: #00BFFF;
+}
+
+#alunoOpcoesAnchorPane{
+	-fx-background-color: #00BFFF;
+}
+
+#exercicoOpcoesAnchorPane{
+	-fx-background-color: #00BFFF;
+}
+
+#pesquisarAlunoAnchorPane{
+	-fx-background-color: #00BFFF;
+}
+
+#pesquisarAtividadeAlunoAnchorPane{
+	-fx-background-color: #00BFFF;
+}
+
+#exibirDetalhesAtividadeAnchorPane{
+	-fx-background-color: #00BFFF;
+}
+
+#relatorioAtividadeTempoAnchorPane{
+	-fx-background-color: #00BFFF;
+}
+
+#exibirDadosPesquisaAtividadeAnchorPane{
+	-fx-background-color: #00BFFF;
+}
+
+#usuarioOperacoesAnchorPane{
+	-fx-background-color: #00BFFF;
+}
+
+Table-Column{
+	-fx-text-alignment: center;
+}
